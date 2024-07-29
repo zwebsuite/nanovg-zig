@@ -8,7 +8,7 @@ const c = @cImport({
 
 const nvg = @import("nanovg");
 
-var prng = std.rand.DefaultPrng.init(4);
+var prng = std.Random.DefaultPrng.init(4);
 const random = prng.random();
 
 var cursor_shape: Shape = .star;
